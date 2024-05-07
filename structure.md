@@ -1,6 +1,6 @@
 ### Struktura projektu
-Scenes/ - Obsahuje všechny soubory scén (.tscn).
-Scripts/ - Obsahuje všechny skripty C# (.cs).
+* Scenes/ - Obsahuje všechny soubory scén (.tscn).
+* Scripts/ - Obsahuje všechny skripty C# (.cs).
 Graphics/ - Obsahuje sprite sheets a další vizuální prvky.
 Sounds/ - Obsahuje zvukové soubory, jako jsou efekty a hudba.
 Fonts/ - Obsahuje soubory s písmy.
