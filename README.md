@@ -1,43 +1,54 @@
-# FAI Campus Rush
-![[Pasted image 20240416145413.png]]
+# Game Base 2D for Godot 4
 
-## O Hře
-FAI Campus Rush je rychlá 2D plošinovka, inspirovaná klasikami jako Super Mario a Bulánci, speciálně navržená pro den otevřených dveří na FAI. Hráč prochází úrovněmi, které symbolizují různé obory fakulty, a snaží se v co nejkratším čase splnit výzvy a sesbírat předměty.
+![](https://github.com/GuilhermeGSousa/game-base-2D/blob/master/main_menu.gif)
 
-## Jak Hrát
-- **Spuštění Hry:** Otevřete hru ve webovém prohlížeči nebo stáhněte a spusťte lokálně pomocí Godot engine.
-- **Ovládání:** Pohybujte se šipkami, skok mezerníkem, interakce s objekty klávesou "F".
+Check out the [wiki](https://github.com/GuilhermeGSousa/game-base-2D/wiki) for more info on how to use everything in this repo!
 
-## Instalace
-1. **Stáhnout Godot Engine:** [Godot Download](https://godotengine.org/download)
-2. **Klonování Repozitáře:**
-   `git clone https://github.com/username/FAI-Campus-Rush.git` 
+## About
+------------------
+A base structure for 2D games using Godot 4.
 
-## Vývoj
+It aims to include everything needed to create a polished 2D game, from movement scripts to screen postprocessing shaders, while leveraging the new features of Godot 4 and using a clean, scalable and extensible code architecture.
 
-Hra byla vyvinuta v Godot Engine 4.2, s použitím jazyka GDScript/C# dle požadavků. Grafika a zvuky byly čerpány z různých online zdrojů... převážně free skrze licence
+## Install :computer:
+-----------
+This repo uses Godot 4.1 and above!
 
-## Grafika
-- **Sprite Sheets:**
-  - [Kenney](https://kenney.nl/assets) - Platformer Art: Deluxe Pack
-  - [OpenGameArt](https://opengameart.org/content/platformer-art-pixel-adventure) - Pixel Adventure Assets
+Simply fork this repo and start working on your game! Some sample scenes are available under `scenes/samples`.
 
-## Zvuky
-- **Efekty:**
-  - [FreeSound](https://freesound.org) - Různé efekty pro skoky, sběr předmětů, etc.
-- **Hudba:**
-  - [Incompetech](https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100879) - Royalty free music suitable for fast-paced games
+## Content
+-----------
 
-## Fonty
-- **Google Fonts:**
-  - [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) - Retro styl fontu vhodný pro 2D hry
- 
+### Samples :video_game:
 
-## Autoři
-- Matěj Vaculík
-- Kristián Zednikovič
-- Daniel Mago
+- A scene showcasing post-processing effects
+- A simple top-down scene
+- A simple platformer scene
+- A simple platformer character scene with a basin animation state machine setup
 
+### Game systems :wrench:
+- A simple audio manager
+- Scene transition system with some cool effects!
+- A save system. Simply add nodes you want to save to a "Saveable" group to mark them for save!
 
-## Licence
-Tento projekt je k dispozici pod MIT licencí. Všechny použité zdroje jsou uvedeny v souboru `resources.md`.
+### UI :pencil:
+- A main menu
+- A settings menu with audio sliders
+- A pause menu
+- Save/Load game buttons
+- An dialog box for NPC and object interations
+- A shader based minimap!
+
+### Movement :running:
+- Top-down movement
+- Side scroller movement with coyote jump and jump buffering
+
+### Shaders :art:
+- Scene transition shaders
+- Post processing shaders, including blur, chromatic aberration, CRT effect and vignette
+- Shaders for in game effects, such as color flickering, color replace, 2D shake and outlines
+
+### Camera :movie_camera:
+- Camera following
+- Camera 2D shake
+- Camera areas (the camera will stay in bounds while the player is inside that area)
